@@ -8,19 +8,33 @@
 </head>
 <body>
     <div class="heading">
-
+        <h1>Employee Data Management</h1>
+        <h2>A Comprehensive Directory of Employee Billable Hours</h2>
     </div>
-    <div class="table" id="table-div">
-        <tr>
-            <th>Name</th>
-            <th>Role</th>
-            <th>Start Date</th>
-            <th>Months Worked</th>
-            <th>Monthly</th>
-        </tr>
+    <div class="tablecontainer">
+        <h3 class="title">Current Employees</h3>
+        <div class="table" id="table-div">
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Start Date</th>
+                <th>Months Worked</th>
+                <th>Monthly</th>
+            </tr>
+        </div>
     </div>
     <div class="fields">
-
+        <form id="timesheet-fields">
+            <label for="name-input">Employee Name</label>
+                <input type="text" id="name"><br>
+            <label for="role-input">Role</label>
+                <input type="text" id="role"><br>
+            <label for="start-date-input">Start Date (MM/DD/YYYY)</label>
+                <input type="text" id="start-date"><br>
+            <label for="name-input">Monthly Rate</label>
+                <input type="text" id="montly-rate"><br>
+            <input id="add-info" type="submit" value="Submit">
+        </form>
     </div>
 </body>
     <script src="./assets/app.js"></script>
